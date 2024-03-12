@@ -1,2 +1,3 @@
 # Dynamic_MoE
-Inference Code for Paper "Harder Tasks Need More Experts: Dynamic Routing in MoE Models"
+ Paper "Harder Tasks Need More Experts: Dynamic Routing in MoE Models"
+ the code and model will be public in one week
