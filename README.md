@@ -20,7 +20,7 @@ Dynamic routing method demonstrates substantial improvements over Top2 Routing a
 
 We can observe that the number of experts activated per token decreases over time. In the early stages of training, dynamic routing assigns more experts to each token, but after 60B tokens, the average number of activated experts is already less than 2. 
 
-<img src="./pics/effcient_training.png" alt="image-20240729211947115" align="left" style="zoom:50%;" />
+<img src="./pics/effcient_training.png" alt="image-20240729211947115" align="left" style="zoom:40%;" />
 
 
 
@@ -28,7 +28,9 @@ We can observe that the number of experts activated per token decreases over tim
 
 Across all five downstream tasks, the number of activated experts is less than two. The model activates 1.76 experts on average, which is fewer than the fixed activation of two experts by the Top2 Routing method.
 
-<img src="./pics/effcient_inference.png" alt="image-20240729211947115" align='left' style="zoom:50%;" />
+<img src="./pics/effcient_inference.png" alt="image-20240729211947115" align='left' style="zoom:35%;" />
+
+
 
 
 
