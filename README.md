@@ -10,37 +10,37 @@ Dynamic MoE introduces a novel dynamic expert selection framework for Mixture of
 
 Dynamic routing method demonstrates substantial improvements over Top2 Routing across various benchmarks, achieving an average improvement of 0.7% with less than 90% activated parameters.
 
-![image-20240730231615035](./pics/evaluation_res.png)
+<img src="./pics/evaluation_res.png" alt="image-20240729211947112" style="zoom:50%;" />
 
 
 
 ## 3 Efficiency of Dynamic MoE
 
-#### Efficient Training
+### Efficient Training
 
 We can observe that the number of experts activated per token decreases over time. In the early stages of training, dynamic routing assigns more experts to each token, but after 60B tokens, the average number of activated experts is already less than 2. 
 
-![image-20240729211947115](./pics/effcient_training.png)
+<img src="./pics/effcient_training.png" alt="image-20240729211947115" align="left" style="zoom:50%;" />
 
 
 
-#### Efficient Inference
+### Efficient Inference
 
 Across all five downstream tasks, the number of activated experts is less than two. The model activates 1.76 experts on average, which is fewer than the fixed activation of two experts by the Top2 Routing method.
 
-![image-20240729211947112](./pics/effcient_inference.png)
+<img src="./pics/effcient_inference.png" alt="image-20240729211947115" align='left' style="zoom:50%;" />
 
 
 
 ## 4 Quick Start
 
-#### Model Weights
+### Model Weights
 
 Model weights can be get [here](https://huggingface.co/AnLan577/Dynamic_MoE)
 
 
 
-#### Text Generation
+### Text Generation
 
 ```python
 from transformers import AutoTokenizer
@@ -91,7 +91,7 @@ if __name__ == "__main__":
 
 ## 5 Citation
 
-```python
+```
 @article{huang2024harder,
   title={Harder Tasks Need More Experts: Dynamic Routing in MoE Models},
   author={Huang, Quzhe and An, Zhenwei and Zhuang, Nan and Tao, Mingxu and Zhang, Chen and Jin, Yang and Xu, Kun and Chen, Liwei and Huang, Songfang and Feng, Yansong},
